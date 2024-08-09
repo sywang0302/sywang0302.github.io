@@ -21,12 +21,12 @@ repository               : "sywang0302/sywang0302.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
-  name             : "Your Sidebar Name"
-  pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  avatar           : "syw.png"
+  name             : "Shouyi Wang"
+  pronouns         : # example: "he"  
+  bio              : "An undergraduate student at Nanjing University"
+  location         : "China"
+  employer         : 
   uri              : # URL
   email            : "none@example.org" 
 
