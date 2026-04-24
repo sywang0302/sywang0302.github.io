@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shouyi Wang | Astrophysics</title>
+  <meta name="description" content="Personal academic website of Shouyi Wang, doctoral student in astronomy at Peking University. Research interests include AGN, X-ray astronomy, and high-redshift quasars.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================================================================
+     📌 导航栏
+     修改导航项：直接改下面的 <a> 标签文字
+     ================================================================ -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="#hero" class="nav-logo">S. Wang</a>
+    <button class="nav-toggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#talks">Talks</a></li>
+      <li><a href="#awards">Awards</a></li>
+      <li><a href="#cv">CV</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ================================================================
+     🌟 Hero Section - 首屏大标题
+     📝 修改你的名字、头衔、一句话介绍
+     ================================================================ -->
+<section id="hero">
+  <canvas id="starfield"></canvas>
+  <div class="hero-content">
+    <!-- 📝 改名字 -->
+    <h1>Shouyi Wang</h1>
+    <!-- 📝 改头衔 -->
+    <p class="hero-subtitle">Doctoral Student &middot; Peking University</p>
+    <!-- 📝 改一句话介绍 -->
+    <p class="hero-tagline">"Exploring the X-ray universe from AGN to high-redshift quasars"</p>
+    <!-- 📝 改链接地址 -->
+    <div class="hero-links">
+      <a href="mailto:sywang0302@gmail.com">✉ Email</a>
+      <a href="https://github.com/sywang0302" target="_blank">⌨ GitHub</a>
+      <a href="https://ui.adsabs.harvard.edu/search/q=orcid%3A0009-0003-1260-4143&sort=date%20desc%2C%20bibcode%20desc&p_=0" target="_blank">📚 ADS</a>
+      <a href="Shouyi_CV.pdf" target="_blank">📄 CV</a>
+    </div>
+  </div>
+  <div class="hero-scroll"><span></span></div>
+</section>
+
+<!-- ================================================================
+     👤 About Section
+     📝 修改个人简介文字、教育经历
+     ================================================================ -->
+<section id="about">
+  <div class="container">
+    <h2 class="section-title fade-in"><span class="section-number">01.</span> About Me</h2>
+    <div class="about-grid fade-in">
+      <!-- 📝 替换照片：把你的照片命名为 profile.jpg 放在同一目录
+           然后把下面的 div.profile-placeholder 改成:
+           <img src="profile.jpg" alt="Shouyi Wang" class="profile-photo">  -->
+      <div class="profile-photo-wrapper">
+        <div class="profile-placeholder">SW</div>
+      </div>
+      <div class="about-text">
+        <!-- 📝 修改自我介绍 -->
+        <p>
+          I am a first-year doctoral student in astronomy at
+          <strong>Peking University</strong>, advised by Prof. Xuebing Wu.
+          I received my B.S. in Astronomy from <strong>Nanjing University</strong>
+          in 2025, where I worked with Prof. Feige Wang and Prof. Bin Luo.
+        </p>
+        <p>
+          My research focuses on <strong>active galactic nuclei (AGN)</strong> and
+          <strong>X-ray astronomy</strong>. I am particularly interested in the
+          multi-wavelength properties of weak-line quasars, obscured AGN in
+          dwarf galaxies, and the environments of high-redshift quasars. I have
+          experience with data from <em>Chandra</em>, <em>XMM-Newton</em>,
+          <em>NuSTAR</em>, and <em>JWST</em>.
+        </p>
+
+        <!-- 📝 教育经历 - 修改年份、学校、导师 -->
+        <div class="education-timeline">
+          <h3>Education</h3>
+
+          <div class="timeline-item">
+            <div class="timeline-year">2025 – Present</div>
+            <div class="timeline-title">Ph.D. in Astronomy, Peking University</div>
+            <div class="timeline-detail">Advisor: Prof. Xuebing Wu</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-year">Feb – Jun 2024</div>
+            <div class="timeline-title">Visiting Research Student, Penn State University</div>
+            <div class="timeline-detail">Advisor: Prof. W. N. Brandt & Prof. Bin Luo</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-year">2021 – 2025</div>
+            <div class="timeline-title">B.S. in Astronomy, Nanjing University</div>
+            <div class="timeline-detail">Thesis advisor: Prof. Feige Wang & Prof. Bin Luo</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     🔬 Research Interests
+     📝 修改/增删研究方向卡片
+     每张卡片包含: 图标 emoji、标题、描述
+     ================================================================ -->
+<section id="research">
+  <div class="container">
+    <h2 class="section-title fade-in"><span class="section-number">02.</span> Research Interests</h2>
+    <div class="research-grid">
+
+      <!-- 📝 研究方向卡片 1 -->
+      <div class="research-card fade-in">
+        <span class="research-icon">🔭</span>
+        <h3>X-ray Astronomy</h3>
+        <p>Multi-wavelength spectral and variability studies of AGN using Chandra, XMM-Newton, and NuSTAR observations.</p>
+      </div>
+
+      <!-- 📝 研究方向卡片 2 -->
+      <div class="research-card fade-in">
+        <span class="research-icon">⭐</span>
+        <h3>Weak-line Quasars</h3>
+        <p>Investigating the physical nature of quasars with unusually weak UV emission lines through X-ray diagnostics.</p>
+      </div>
+
+      <!-- 📝 研究方向卡片 3 -->
+      <div class="research-card fade-in">
+        <span class="research-icon">🌌</span>
+        <h3>High-redshift Quasars</h3>
+        <p>Studying the environments and properties of quasars at cosmic dawn, including protoclusters at z &gt; 6.</p>
+      </div>
+
+      <!-- 📝 研究方向卡片 4 -->
+      <div class="research-card fade-in">
+        <span class="research-icon">🌀</span>
+        <h3>Obscured AGN & Dwarf Galaxies</h3>
+        <p>Discovering and characterizing heavily obscured low-mass AGN, exploring AGN-galaxy co-evolution at the low-mass end.</p>
+      </div>
+
+      <!-- 📝 新增卡片：复制上面的 div.research-card 块，修改内容即可 -->
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     📄 Publications
+     📝 新增论文：复制一个 div.pub-card 块，修改内容
+     📝 把你自己的名字用 <strong> 标签包裹会自动高亮
+     ================================================================ -->
+<section id="publications">
+  <div class="container">
+    <h2 class="section-title fade-in"><span class="section-number">03.</span> Publications</h2>
+    <div class="pub-list">
+
+      <!-- 📝 论文 1 -->
+      <div class="pub-card fade-in">
+        <span class="pub-year">2024</span>
+        <div class="pub-title-text">The Remarkable X-Ray Spectra and Variability of the Ultraluminous Weak-line Quasar SDSS J1521+5202</div>
+        <div class="pub-authors"><strong>Wang, S.</strong>, Brandt, W. N., Luo, B., et al.</div>
+        <div class="pub-journal">The Astrophysical Journal, 974, 2</div>
+        <div class="pub-links">
+          <a href="https://ui.adsabs.harvard.edu/abs/2024ApJ...974....2W" target="_blank">ADS</a>
+          <a href="https://arxiv.org/abs/2408.07891" target="_blank">arXiv</a>
+        </div>
+      </div>
+
+      <!-- 📝 论文 2 -->
+      <div class="pub-card fade-in">
+        <span class="pub-year">2026</span>
+        <div class="pub-title-text">A Rare Eddington-Limited, Heavily Obscured Low-Mass Active Galactic Nucleus Likely Triggered by a Galaxy Merger</div>
+        <div class="pub-authors"><strong>Wang, S.</strong>, Fan, Zou, C. C., Chen, et al.</div>
+        <div class="pub-journal">The Astrophysical Journal (Submitted)</div>
+        <div class="pub-links">
+          <!-- 📝 发表后添加链接 -->
+          <a href="#" target="_blank">ADS</a>
+        </div>
+      </div>
+
+      <!-- 📝 论文 3 -->
+      <div class="pub-card fade-in">
+        <span class="pub-year">2026</span>
+        <div class="pub-title-text">Deep X-ray View of the Most Distant Protocluster Anchored by a Quasar: No Evidence of Enhanced AGN Activity</div>
+        <div class="pub-authors"><strong>Wang, S.</strong>, Feige Wang, et al.</div>
+        <div class="pub-journal">In Press</div>
+        <div class="pub-links">
+          <a href="#" target="_blank">ADS</a>
+        </div>
+      </div>
+
+      <!-- 📝 新增论文：复制上面任意一个 div.pub-card 块，修改年份/标题/作者/期刊/链接 -->
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     🎤 Talks & Presentations
+     📝 新增报告：复制一个 div.talk-item 块
+     📝 类型标签: class="talk-type talk" / "talk-type poster" / "talk-type invited"
+     ================================================================ -->
+<section id="talks">
+  <div class="container">
+    <h2 class="section-title fade-in"><span class="section-number">04.</span> Talks &amp; Presentations</h2>
+    <div class="talks-list fade-in">
+
+      <div class="talk-item">
+        <span class="talk-date">01/2026</span>
+        <div class="talk-info">
+          <span class="talk-name">The Third Shen Kuo Academic Symposium</span>
+          <span class="talk-type poster">Poster</span>
+        </div>
+      </div>
+
+      <div class="talk-item">
+        <span class="talk-date">12/2024</span>
+        <div class="talk-info">
+          <span class="talk-name">25 Years of Chandra Science Symposium</span>
+          <span class="talk-type poster">Poster</span>
+        </div>
+      </div>
+
+      <div class="talk-item">
+        <span class="talk-date">11/2024</span>
+        <div class="talk-info">
+          <span class="talk-name">Annual Meeting of the Chinese Astronomical Society</span>
+          <span class="talk-type poster">Poster</span>
+        </div>
+      </div>
+
+      <div class="talk-item">
+        <span class="talk-date">10/2024</span>
+        <div class="talk-info">
+          <span class="talk-name">USTC Department of Astronomy Journal Club</span>
+          <span class="talk-type invited">Invited Talk</span>
+        </div>
+      </div>
+
+      <div class="talk-item">
+        <span class="talk-date">09/2024</span>
+        <div class="talk-info">
+          <span class="talk-name">PKU-DoA Undergraduate Astronomy Symposium</span>
+          <span class="talk-type talk">Talk</span>
+        </div>
+      </div>
+
+      <!-- 📝 新增报告：复制上面的 div.talk-item 块 -->
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     🏆 Awards
+     📝 新增奖项：复制一个 div.award-item 块
+     📝 重要奖项加 class="award-item award-highlight"
+     ================================================================ -->
+<section id="awards">
+  <div class="container">
+    <h2 class="section-title fade-in"><span class="section-number">05.</span> Selected Awards</h2>
+    <div class="awards-grid fade-in">
+
+      <div class="award-item award-highlight">
+        <span class="award-year-badge">2025</span>
+        <span class="award-name">Outstanding Graduate, Nanjing University</span>
+      </div>
+
+      <div class="award-item award-highlight">
+        <span class="award-year-badge">2024</span>
+        <span class="award-name">Special Prize of Dong Liang Scholarship (Highest honor at NJU)</span>
+      </div>
+
+      <div class="award-item award-highlight">
+        <span class="award-year-badge">2024</span>
+        <span class="award-name">National Scholarship</span>
+      </div>
+
+      <div class="award-item">
+        <span class="award-year-badge">2024</span>
+        <span class="award-name">Outstanding Student Exemplar, NJU</span>
+      </div>
+
+      <div class="award-item">
+        <span class="award-year-badge">2022–24</span>
+        <span class="award-name">Elite Program Scholarship, NJU</span>
+      </div>
+
+      <div class="award-item">
+        <span class="award-year-badge">2022</span>
+        <span class="award-name">National Astronomical Observatories Scholarship</span>
+      </div>
+
+      <div class="award-item">
+        <span class="award-year-badge">2022</span>
+        <span class="award-name">Zheng Gang Elite Scholarship, NJU</span>
+      </div>
+
+      <!-- 📝 新增奖项：复制上面的 div.award-item 块 -->
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     📋 CV Section
+     📝 修改日期：每次更新CV文件后，改下面的日期
+     📝 CV文件：把你的CV命名为 Shouyi_CV.pdf 放在同一目录
+     ================================================================ -->
+<section id="cv">
+  <div class="container">
+    <h2 class="section-title fade-in"><span class="section-number">06.</span> Curriculum Vitae</h2>
+    <div class="cv-section fade-in">
+      <p class="cv-description">
+        A complete summary of my education, publications, proposals, observing experience, talks, awards, and outreach activities.
+      </p>
+      <!-- 📝 CV下载链接：把CV文件命名为 Shouyi_CV.pdf 放在网站根目录 -->
+      <a href="Shouyi_CV.pdf" class="cv-download-btn" target="_blank">
+        <span class="cv-download-icon">📄</span>
+        <span>
+          <strong>Download Full CV</strong>
+          <!-- 📝 每次更新CV后修改这个日期 -->
+          <small>Last updated: April 2026</small>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     📬 Contact / Footer
+     📝 修改邮箱和链接
+     ================================================================ -->
+<footer id="contact">
+  <div class="container">
+    <div class="footer-links">
+      <a href="mailto:sywang0302@gmail.com">✉ sywang0302@gmail.com</a>
+      <a href="https://github.com/sywang0302" target="_blank">GitHub</a>
+      <a href="https://ui.adsabs.harvard.edu/search/q=orcid%3A0009-0003-1260-4143&sort=date%20desc%2C%20bibcode%20desc&p_=0" target="_blank">NASA/ADS</a>
+    </div>
+    <!-- 📝 修改版权年份和名字 -->
+    <p>&copy; 2026 Shouyi Wang. Peking University.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
